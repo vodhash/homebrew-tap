@@ -1,0 +1,26 @@
+# The formula installs and runs, on macOS and Linux, each time it changes.
+name: Test
+
+on:
+  push:
+    branches: [main]
+    paths: ["Formula/**"]
+  pull_request:
+    paths: ["Formula/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, macos-13, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@master
+      - run: brew install --formula ${{ github.repository_owner }}/tap/kraal
+      - run: brew test ${{ github.repository_owner }}/tap/kraal
+      - run: kraal --version
