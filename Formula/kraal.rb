@@ -2,28 +2,28 @@
 class Kraal < Formula
   desc "Terminal workspaces for coding agents and SSH fleets"
   homepage "https://github.com/vodhash/kraal"
-  version "0.5.3"
+  version "0.6.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/vodhash/kraal/releases/download/v0.5.3/kraal-aarch64-apple-darwin.tar.gz"
-      sha256 "6e9e8d806fb019d8989569224a886da0419e6db0897bf884575a343a86e873d4"
+      url "https://github.com/vodhash/kraal/releases/download/v0.6.0/kraal-aarch64-apple-darwin.tar.gz"
+      sha256 "e0ff7cc3240aa2ca5145772808861dd17fee67f5fb6c76cd3d5523e4b44a4289"
     end
     on_intel do
-      url "https://github.com/vodhash/kraal/releases/download/v0.5.3/kraal-x86_64-apple-darwin.tar.gz"
-      sha256 "1481730d4668f4d4b000d66afaf0a8c5940488e48d9bbeb84c9bdfcb74ca61b4"
+      url "https://github.com/vodhash/kraal/releases/download/v0.6.0/kraal-x86_64-apple-darwin.tar.gz"
+      sha256 "5758441b3aace315299a75c35343647429e3c8683e961f235db9160e0e648af0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/vodhash/kraal/releases/download/v0.5.3/kraal-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "a7361bd5985c89f3f611196bc30f5732e2609bcfe3c704dfaa68a83a3965bdf7"
+      url "https://github.com/vodhash/kraal/releases/download/v0.6.0/kraal-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "6175952f541f4e53388efb2b74d8f882b62cfd4bb3bce8c67cccdf867065f399"
     end
     on_intel do
-      url "https://github.com/vodhash/kraal/releases/download/v0.5.3/kraal-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "edd63a5c296282e14c0791a9c3680835a01480e56e118c874b5dbf0679c4f608"
+      url "https://github.com/vodhash/kraal/releases/download/v0.6.0/kraal-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "f6deca53fddbaccd96ea793da9bb5cc94c3b1333818ab50e364660b7e38d1666"
     end
   end
 
